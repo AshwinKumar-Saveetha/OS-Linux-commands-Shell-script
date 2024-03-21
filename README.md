@@ -87,40 +87,43 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/baac9f4e-974e-411b-934d-85bf3b602790)
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/2e03daed-f504-479b-9030-c23924ff4530)
+
+
 
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/de5f7ea5-ec35-40b5-8908-1605849a1e87)
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/0a19cb91-b645-4687-87c0-086dcaa9d148)
+
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/c907aac6-6388-4134-8d3e-35cf0bf140ec)
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/3a75e4f1-6f49-4983-84b7-7277c7843eb6)
 
 
-cat < newfile 
+
+cat > newfile 
 ```
 Hello world
 hello world
 ^d
 ````
-cat > newfile 
-Hello world
-hello world
+
  
 grep Hello newfile 
 ## OUTPUT
-![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/ed915918-6d39-455c-95c2-f35224ad6c2a)
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/568e5c3f-8266-4fe6-a01a-06efb74e8bab)
 
 
 
 grep hello newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/930b95c8-1c24-41c5-84fe-5d747a497d47)
 
 
 
@@ -128,38 +131,26 @@ grep hello newfile
 grep -v hello newfile 
 ## OUTPUT
 
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/94afdf67-2e48-43ab-a1f9-42d9de23af1c)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/f8535b1f-4cab-4a2d-b36d-8cec94fcfd03)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/5aa8276f-bc86-4add-bc04-6d719669072a)
 
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
-
-
-grep -w -n world newfile   
-## OUTPUT
-
-
-cat < newfile 
-```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
-```
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/f03dc186-49ae-4027-bcd5-d33892288b6b)
 
 cat > newfile
 ```
@@ -172,59 +163,71 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/2e7b2e22-546d-4cf4-8c55-e004d07bc432)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/9504c57c-c491-4984-91a8-0f6ffa3405b6)
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/85c2ea71-e4c0-4527-ad4b-f999f7dd6836)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/d30b7b1a-4ef2-4d3c-b102-5459fd72d99e)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/cab3a50b-2828-4b70-b0ac-dd9870c27d65)
 
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/220b73d8-209c-467c-bf69-eeab592b9f55)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/134dd96b-ec62-4534-94d8-2838128d5926)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/9747fd78-a71e-4ac1-bc88-395c40c5a141)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/61acfb3f-c1d8-4df0-8599-4f354a63eaf9)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/6eb50d28-7a75-4198-b114-cfb6fa1af3b6)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/510bbc04-d288-4b3f-8ef6-6d8fa637c3a9)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/fd9e79fe-ef41-4999-9f8d-7d49f8e7f6a5)
 
 
 cat > file23
@@ -243,47 +246,56 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/454dec9b-25d6-4ff5-b527-7cd8dd066541)
 
 
 
 sed -n -e '$p' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/2063ef33-c10f-4a08-a1c7-4c9a1fc21a50)
 
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/d2f5b200-f89f-4fdf-83e2-cf5a5b034330)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/78737b47-4c94-403f-993d-0dd4f06e4880)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/0057c0e2-4513-4a4f-acf6-0b892d784cce)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/ad64fd5d-4327-48be-b161-6e0fe7af04ce)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/00523d89-5158-4d01-a601-1089eedbff2d)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/8bc88352-7206-48e5-802a-d4f572d87354)
 
 
 
 seq 10 
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/13d56ab8-ca51-4c9f-8be7-3c2a4cb3b80c)
 
 
 
