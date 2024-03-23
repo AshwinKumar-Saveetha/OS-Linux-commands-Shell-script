@@ -301,33 +301,41 @@ seq 10
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/b1613ac9-b570-4cc6-b01e-74d904abd089)
 
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/7a82a0f0-95ae-4d0c-a22a-31da1d1aaf6d)
 
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/78951b7a-c375-44f5-b45f-ab68eade58b2)
 
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/091701a2-2116-4bae-a268-c92e9ce800b3)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/a6ff0a5e-df58-471e-8d8c-ca343b04daef)
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/dfc01136-30c0-4c3d-8f0e-52cb7aac03a4)
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/d9a92944-0e42-41ae-9125-9265554b1d6a)
 
 
 #Sorting File content
@@ -341,6 +349,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/6bbf7928-dc8d-4b9f-8056-4ab956946bd8)
 
 
 cat > file22
@@ -354,6 +363,7 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/f765bf07-13f9-4292-aef5-4aa2e0ede8c2)
 
 
 
@@ -361,6 +371,7 @@ uniq file22
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/9deef10f-f1a7-4210-962a-b9d0787cf39e)
 
 cat < urllist.txt
 ```
@@ -377,17 +388,20 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/eb1f8912-c34f-494c-84ea-743b7b308b5c)
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/b3ba8261-228d-446f-bfd7-96544a204a6d)
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![image](https://github.com/AshwinKumar-Saveetha/OS-Linux-commands-Shell-script/assets/155129814/a19797ce-1a2c-4b81-b07c-e7c4eaa0a796)
 
 
 mkdir backupdir
